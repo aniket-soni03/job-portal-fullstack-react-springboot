@@ -29,3 +29,4 @@ Frontend application for the job portal built with React providing user interfac
 cd frontend
 npm install
 npm run dev
+```

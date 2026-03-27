@@ -33,18 +33,20 @@ Backend service for the job portal built using Spring Boot providing secure REST
 - JWT-based authentication using Spring Security
 - Token-based authorization for protected endpoints
 
+## ⚙️ Configuration
+
+## Update your application.properties:
+```bash
+spring.datasource.url=jdbc:mysql://localhost:3306/your_database
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+
+jwt.secret=your_secret_key 
+```
+
 ## ⚙️ Run Locally
 
 ```bash
 cd backend
 mvn spring-boot:run
-
-⚙️ Configuration
-
-Update application.properties:
-
-spring.datasource.url=jdbc:mysql://localhost:3306/job_portal
-spring.datasource.username=your_username
-spring.datasource.password=your_password
-jwt.secret=yourSecretKey
-fast2sms.apiKey=yourFast2SMSKey
+```
