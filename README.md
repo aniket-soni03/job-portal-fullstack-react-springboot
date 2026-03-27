@@ -9,7 +9,6 @@ Full-stack job portal built with React and Spring Boot featuring JWT-based authe
 - Spring Security (JWT)
 - MySQL
 - REST APIs
-- Tailwind CSS
 
 ## ✨ Features
 - Role-based authentication (Employer/Employee)
@@ -18,23 +17,40 @@ Full-stack job portal built with React and Spring Boot featuring JWT-based authe
 - Job application system for users
 - Job search with filters (category, type, salary)
 - Responsive UI with real-time form validation
-- SMS notification on successful job application
 
-## 🔗 Project Structure
-
-- Frontend: React application (UI, forms, routing)
-- Backend: Spring Boot REST APIs with authentication and database integration
+## 🏗️ Architecture
+- Frontend: React application for UI, forms, and routing
+- Backend: Spring Boot REST APIs with authentication and business logic
+- Database: MySQL for persistent storage
 
 ## 🔧 API / Backend
 - Spring Boot REST APIs
 - JWT Authentication & Authorization
-- MySQL database integration using Spring Data JPA
+- MySQL integration using Spring Data JPA
 - SMS integration using Fast2SMS API
+
+## ⚙️ Configuration
+
+## Update your application.properties:
+```bash
+spring.datasource.url=jdbc:mysql://localhost:3306/your_database
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+
+jwt.secret=your_secret_key 
+```
 
 ## ⚙️ Run Locally
 
-### Backend
-
+## Backend
 ```bash
 cd backend
 mvn spring-boot:run
+```
+
+## Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
